@@ -497,7 +497,7 @@ class RateCollection(object):
             - *dpi* -- DPI to save the image file at.
             - *cmap* -- Name of the matplotlib colormap to use. Default is 'magma'.
             - *edgecolor* -- Color of grid cell edges.
-            - *area* -- Area of the figure without the colorbar, in square inches. 36
+            - *area* -- Area of the figure without the colorbar, in square inches. 64
               by default.
             - *no_axes* -- Set to *True* to omit axis spines.
             - *no_ticks* -- Set to *True* to omit tickmarks.
@@ -513,7 +513,7 @@ class RateCollection(object):
         cmap = kwargs.pop("cmap", "magma")
         edgecolor = kwargs.pop("edgecolor", "grey")
         small = kwargs.pop("small", 1e-30)
-        area = kwargs.pop("area", 36)
+        area = kwargs.pop("area", 64)
         no_axes = kwargs.pop("no_axes", False)
         no_ticks = kwargs.pop("no_ticks", False)
         no_cbar = kwargs.pop("no_cbar", False)
